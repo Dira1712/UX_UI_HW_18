@@ -104,3 +104,9 @@ a {
 .column{
     flex: 1;
 }
+
+.txt-highlight {
+    background-color: #FFCD29;
+    position: relative;
+    background-position: 40%;
+}
