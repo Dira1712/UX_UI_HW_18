@@ -91,3 +91,16 @@ a {
     font-weight: 450;
     font-size: x-large;
 }
+
+.mySkills{
+    display: flex;
+    justify-content:space-around;
+}
+
+.flexcontainer{
+    display: flex;
+}
+
+.column{
+    flex: 1;
+}
