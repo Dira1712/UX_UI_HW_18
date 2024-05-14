@@ -1,11 +1,4 @@
-
-
-.montserrat-secondary-font {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-}
+/*Navbar*/
 
 .Navbar {
     background-color: #E8DFD3;
@@ -17,6 +10,50 @@
     float: right;
     right: 144px;
     top: 60px;
+}
+
+.logo-properties {
+    position: relative;
+    left: 144px;
+    top: 36px;
+}
+
+/* Hero section */
+
+.dotDesign2 {
+    position: relative;
+    left: 170px;
+}
+
+.montserrat-secondary-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.btnProperties {
+    position: relative;
+    z-index: 4;
+    left: 42%;
+    bottom: 160px;
+    width: 250px;
+    height: 60px;
+    font-size: x-large;
+    font-family: 'Montserrat';
+    border: none;
+    border-radius: 10px;
+    color: #B0532A;
+    font-weight: 600;
+    background-color: #E8DFD3;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+    left: 35%;
+}
+
+.dotDesign1 {
+    position: relative;
+    left: 300px;
+    top: 50px;
 }
 
 .HeroContainer {
@@ -31,6 +68,59 @@
     background-color: #E8DFD3;
     height: 800px;
     width: 1424px;
+}
+
+.dpProperties {
+    height: auto;
+    width: 360px;
+    object-fit: fill;
+    position: relative;
+    left: 180px;
+    top: -130px;
+    border-radius: 150px 10px 0 0;
+}
+
+.helloElement {
+    float: right;
+    position: relative;
+    margin-right: 144px;
+    top: 100px;
+
+}
+
+.heroHeading {
+    float: right;
+    position: relative;
+    left: 245px;
+    top: 270px;
+    text-align: right;
+    color: #B0532A;
+}
+
+.myName {
+    color: #344265;
+}
+
+.welcomeBlurb {
+    float: right;
+    font-weight: 450;
+    position: relative;
+    left: 245px;
+    top: 245px;
+    text-align: right;
+    color: #346065;
+}
+
+.secondaryBtn {
+    font-size: larger;
+}
+
+.secondaryBtnArrow {
+    float: right;
+    position: relative;
+    left: 679px;
+    top: 560px;
+    height: 98px;
 }
 
 .myDescriptionArea {
@@ -65,25 +155,40 @@
     color: #B0532A;
 }
 
-ul {
-    list-style-type: none;
+/*Skills and Experience*/
+
+.subheading {
+    font-weight: 450;
+    margin: 144px;
+    color: #346065;
+    font-size: larger;
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
+.knowMoreSection {
+    background-color: #E8DFD3;
+    display: flex;
+    flex-direction: column;
+}
 
-.about-me-heading {
+.underlineHeading {
     display: inline-block;
     padding-bottom: 5px;
     position: relative;
-  }
-  .about-me-heading:before{
-      content: "";
-      position: absolute;
-      width: 10%;
-      height: 1px;
-      bottom: -5px;
-      left: 1%;
-      border-bottom: 5px solid #B0532A;
-  }
+}
+
+.underlineHeading:before {
+    content: "";
+    position: absolute;
+    width: 4%;
+    height: 1px;
+    bottom: -5px;
+    left: 1%;
+    border-bottom: 5px solid #B0532A;
+}
 
 a {
     text-decoration: none;
@@ -93,31 +198,74 @@ a {
     font-size: x-large;
 }
 
-.mySkills{
-    display: flex;
-    justify-content:space-around;
+.mySkills {
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.flexcontainer{
+.flexContainer {
     display: flex;
+    flex-wrap: wrap;
+    margin-left: 144px;
+    margin-right: 144px;
 }
 
-.column{
+.column {
     flex: 1;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+.footerProperties {
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    color: #346065;
+    margin-top: -100px;
+    bottom: -69px;
+    width: 100%;
 }
 
 
-@media (min-width: 0px)
-and (max-width : 600px) {
+@media (min-width: 601px) {
+    .flexContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
 
-}
-  
-@media (min-width: 600px)
-and (max-width : 1200px) {
+    .skills, .education {
+        grid-column: 1 / 2;
+    }
 
+    .experience {
+        grid-column: 2 / 3;
+    }
 }
+
+@media (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .skills, .experience, .education {
+        order: 1;
+    }
+
+    .experience {
+        order: 2;
+    }
+
+    .education {
+        order: 3;
+    }
+}
+
 
 @media (min-width: 1200px)
-and (max-width : 1800px) {
+and (max-width: 1800px) {
 
 }

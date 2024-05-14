@@ -64,11 +64,6 @@
     color: #B0532A;
 }
 
-ul {
-    list-style-type: none;
-}
-
-
 .about-me-heading {
     display: inline-block;
     padding-bottom: 5px;
@@ -90,19 +85,6 @@ a {
     margin-right: 70px;
     font-weight: 450;
     font-size: x-large;
-}
-
-.mySkills{
-    display: flex;
-    justify-content:space-around;
-}
-
-.flexcontainer{
-    display: flex;
-}
-
-.column{
-    flex: 1;
 }
 
 .txt-highlight {
