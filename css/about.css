@@ -23,6 +23,7 @@
     position: relative;
     background-color: #E8DFD3;
     height: 800px;
+    max-width: 100%;
 }
 
 .HeroSection {
@@ -103,4 +104,20 @@ a {
 
 .column{
     flex: 1;
+}
+
+
+@media (min-width: 0px)
+and (max-width : 600px) {
+
+}
+  
+@media (min-width: 600px)
+and (max-width : 1200px) {
+
+}
+
+@media (min-width: 1200px)
+and (max-width : 1800px) {
+
 }

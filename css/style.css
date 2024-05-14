@@ -110,3 +110,15 @@ a {
     position: relative;
     background-position: 40%;
 }
+
+.halfStyled:before {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    content: attr(data-content);
+    height: 50%;
+    overflow: hidden;
+    color: green;
+}
