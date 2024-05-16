@@ -212,58 +212,18 @@ a {
 
 .column {
     flex: 1;
-    min-width: 300px;
-    box-sizing: border-box;
-}
-
-.footerProperties {
-    position: relative;
-    background-color: #fff;
-    text-align: center;
-    color: #346065;
-    margin-top: -100px;
-    bottom: -69px;
-    width: 100%;
 }
 
 
-@media (min-width: 601px) {
-    .flexContainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 20px;
-    }
+@media (min-width: 0px)
+and (max-width : 600px) {
 
-    .skills, .education {
-        grid-column: 1 / 2;
-    }
-
-    .experience {
-        grid-column: 2 / 3;
-    }
 }
+  
+@media (min-width: 600px)
+and (max-width : 1200px) {
 
-@media (max-width: 600px) {
-    .flexContainer {
-        flex-direction: column;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .skills, .experience, .education {
-        order: 1;
-    }
-
-    .experience {
-        order: 2;
-    }
-
-    .education {
-        order: 3;
-    }
 }
-
 
 @media (min-width: 1200px)
 and (max-width: 1800px) {
